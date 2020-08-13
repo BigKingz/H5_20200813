@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+		<link rel="shortcut icon" type="image/x-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico">
+		<link rel="mask-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/MjliNWVm.svg" color="#4C4C4C">
+		<link rel="apple-touch-icon-precomposed" href="https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		 crossorigin="anonymous">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<title></title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/contact.css">
+		<style>
+			body {
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .img {
+            width: 100%;
+        }
+        div {
+            position: relative;
+        }
+        .box {
+            position: absolute;
+            top: 8.08rem;
+            left: 3.42rem;
+            z-index: 1000;
+        }
+        .gvb img {
+            width: 100%;
+        @import;
+            margin-top: 3%;
+        }
+        .plm {
+            position: fixed;
+            right: 2%;
+            bottom: 34%;
+            z-index: 8;
+            width: 18%;
+            -webkit-animation: plm 10s linear infinite;
+        }
+        @keyframes plm {
+            25% {
+                transform: translateY(25px);
+            }
+
+            50% {
+                transform: translateY(0px);
+            }
+
+            75% {
+                transform: translateY(-25px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .closeaa {
+            position: fixed;
+            top: 2%;
+            right: 3%;
+            z-index: 99;
+        }
+        .adCode {
+            width: 100%;
+        }
+        .qtadCode img {
+            width: 80%;
+        }
+        .float-box {
+            left: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 10%;
+            background: rgba(0, 0, 0, 0.85);
+        }
+        .float-count {
+            background: red;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            text-align: center;
+            left: 10%;
+            top: 1%;
+        }
+        .float-line1 {
+            position: absolute;
+            display: inline-block;
+            color: #fff;
+            left: 30%;
+            top: 10%;
+        }
+        .float-line2 {
+            position: absolute;
+            display: inline-block;
+            color: red;
+            font-weight: bold;
+            left: 20%;
+            top: 46%;
+        }
+        .content-input {
+            background: #FFFFFF;
+            width: 100%;
+            position: fixed;
+            height: 70%;
+            z-index: 999;
+            bottom: 0px;
+            font-size: 20px;
+            border-radius: 25px 25px 0 0;
+        }
+        .content-input-top {
+            margin: 15px;
+        }
+        .content-input-close {
+            position: relative;
+            float: left;
+        }
+        .content-input-title {
+            float: left;
+            left: 33%;
+            position: relative;
+        }
+        .content-input-button {
+            position: relative;
+            float: right;
+        }
+        .content-input-close:before {
+            content: '\2716';
+        }
+        .content-over {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+		textarea{
+			width: 100%;
+			height: 100%;
+			border: none;
+			resize: none;
+			cursor: pointer;
+			letter-spacing: 1px;
+			font-size: 18px;
+		}
+    </style>
+	</head>
+	<body id="activity-detail" class="zh_CN mm_appmsg appmsg_skin_default appmsg_style_default not_in_mm">
+		<div id="js_article" class="rich_media" style="overflow: auto;margin-bottom: 20%;">
+			<div id="js_top_ad_area" class="top_banner">
+				<ul>
+					<li class='nav1_0'><a href='javascript:;'><span>推荐</span></a></li>
+					<li class='nav1_1'><a href='javascript:;'><span>养生</span></a></li>
+					<li class='nav1_7'><a href='javascript:;'><span>患者</span></a></li>
+					<li class='nav1_2'><a href='javascript:;'><span>养老</span></a></li>
+					<li class='nav1_2'><a href='javascript:;'><span>资讯</span></a></li>
+				</ul>
+			</div>
+			<div class="rich_media_inner">
+				<div id="page-content" class="rich_media_area_primary">
+					<div class="rich_media_area_primary_inner">
+						<div id="img-content">
+							<h3 style="text-align: center;">
+								<strong><span style="font-family: 宋体; font-size: 16px;">治头痛用它就对了，小散剂解决大问题</span></strong>
+							</h3>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p>
+								<img src="img/p1.jpg" style="width: 100%;text-align: center;" />
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">说起头痛，相信很多人并不陌生。最新数据显示，我国头痛患病率高达50%，其中有90%以上的人，报告终生头痛史。不仅如此，头痛的发病人群逐渐年轻化，它已成为医学界公认的最痛苦、最顽固、治疗最困难的疾病之一。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<div style="margin-left: 20px;">
+								<ul class=" list-paddingleft-2" style="list-style-type: disc;">
+									<li>
+										<h6>
+											<strong><span style="font-family: 黑体; font-size: 18px;">张仲景巧治诸葛玄，头痛困扰一扫而光</span></strong>
+										</h6>
+									</li>
+								</ul>
+							</div>
+
+
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">在历史上，有很多名人都深受头痛困扰，诸葛孔明的叔叔诸葛玄就是其中一位。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">诸葛亮自幼父母双亡，后被叔叔诸葛玄所收养。在诸葛亮16岁的时候，叔叔诸葛玄突发怪病，头痛不已。不仅如此，诸葛玄的脑袋上一定要围着厚厚的衣物，在屋内紧闭门窗。但凡吹到一点点风就会头痛不已，好像痛到骨头深处去了。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">为了给叔父治病，诸葛亮找了很多大夫，但都没有治好。最后，他遇到了在当时还未成名的“医圣”张仲景。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">张仲景叫诸葛玄伸出舌头来，一看舌淡苔薄白，脉浮带紧，身体好像被绳子绑住了，头痛骨头痛，又出不了汗。当下开出一副由红参、地龙、全蝎、天麻等数十味药材组成的方子。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">药煎好后，诸葛玄才喝第一碗身体就出汗了，头不痛了，也不怕风了，头上的衣物也取下来了。一连喝了十几天，诸葛玄头痛的问题彻底解决了。此后，越来越多的人找张仲景治疗头痛问题，而他的大名也渐渐被人们所知晓。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<div style="margin-left: 20px;">
+								<ul class=" list-paddingleft-2" style="list-style-type: disc;">
+									<li>
+										<h6>
+											<strong><span style="font-family: 黑体; font-size: 18px;">古方新创，一招解决头疼困扰</span></strong>
+										</h6>
+									</li>
+								</ul>
+							</div>
+
+
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">在张仲景的一生中，治病救人始终放在了首位，他并将自己的毕生所学编制成书，也就是我国中医圣典《伤寒杂病论》。此书不仅记载了大量组方严谨、疗效显著的复方，而且在理论和临床实践上都具有很高的指导意义。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">现今，汉方本草国际中医药研究院以张仲景编著国医圣典《伤寒杂病论》为理论指导，选取张仲景治疗头痛的古方，并再此基础上结合现代医学技术，古方新创，研发出治疗头痛有效的奇方。</span>
+							</p>
+
+							<p>
+								<img src="img/p7.jpg" style="width: 100%;text-align: center;" />
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">根据患者病情定制专属治疗方案，选取红参、地龙、蜈蚣、全蝎、天麻、水蛭等数十味名贵药材，重新配伍并采用<strong><span style="color:#C00000">水飞法炮制技术</span></strong>结合现代提取技术，让经典古方以全新的形式重新出现。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">此方能调理五脏，平衡阴阳，或疏风清热，或平肝潜阳，或平肝息风，或化浊降逆，或养阴补肾等辨证施治，从根本上解除了头痛的根源问题，帮助万千患者摘下头痛这个“紧箍咒”。</span>
+							</p>
+
+							<p style="text-indent:28px">
+								<span style="font-family:宋体"><br /></span>
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体"></span>
+							</p>
+							<p style="text-align:center">
+								<a class="copyBtn1" href="javascript:" data-clipboard-action="copy" data-clipboard-target="#foo1">
+									<strong><span style="color:red;font-weight: 800;font-size: 20px;" id="foo1">tyct6688</span><span style="font-family:宋体;color:#A6A6A6">【复制微信，获取治疗方法】</span></strong>
+								</a>
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体"></span><br />
+							</p>
+							<p>
+								<strong><span style="font-family:宋体">万千患者</span> </strong><strong><span style="font-family:宋体">好评来袭</span></strong>
+							</p>
+							<p>
+								<img src="img/p6.jpg" style="width: 100%;text-align: center;" />
+							</p>
+							<p>
+								<strong><span style="font-family:宋体"><br /></span></strong>
+							</p>
+							<p>
+								<strong><span style="font-family:宋体">案例一</span></strong>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">张涛，</span>22<span style="font-family:宋体">岁，是一名大三学生，偏头痛三年多了，一遇到压力头痛就会加剧，伴随恶心，食欲不振，失眠等情况。曾服用镇静止痛类药物，治标不治本，且头痛情况越发频繁，严重影响学习生活。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">邻居阿姨听说后，向张涛妈妈推荐了【</span><span style="color:red;font-weight: 800;font-size: 20px;">tyct6688</span>
+								<span style="font-family:宋体">】，根据张涛的身体状况制定了治疗方案，对治疗头痛疾病有奇效。服用了半个月后，张涛明显感觉头痛得到了缓解，恶心、失眠的情况也有所好转。服用两个疗程后，张涛偏头痛的情况消失了，人也比以前更有精神。并且在他不断地努力下，最终考上了浙江大学的研究生！</span>
+							</p>
+							<p>
+								<br />
+							</p>
+							<p>
+								<img src="img/p3.jpg" style="width: 100%;text-align: center;" />
+							</p>
+							<p>
+								<strong><span style="font-family:宋体">案例二</span></strong>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">刘女士今年</span>38<span style="font-family:宋体">岁，是两个孩子的妈妈，繁重的工作和琐碎的家务让她出现了不定期头痛的情况，伴随神经衰弱、抵抗力下降，情绪不稳定。一到经期腹痛不止，头也嗡嗡作响，连水都喝不下去。</span>
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">刘女士为了治疗自己的病，尝试了西药、针灸、拔罐等很多治疗方法，但效果都不明显。在朋友的介绍下，她加了【</span><span style="color:red;font-weight: 800;font-size: 20px;">tyct6688</span>
+								<span style="font-family:宋体">】的微信接受一对一专属治疗。服用两周后，刚好赶上经期，她发现肚子只是微微胀痛，没有出现以往头痛、脑袋嗡嗡作响的情况。连续服用一个疗程后，刘女士的抵抗力提升了，情绪稳定，不再出现易怒，爱发脾气的情况，头痛的情况基本得到了缓解。两个疗程后，头痛所伴随的各种不良反应也都彻底消失了。她说：“这么好的治疗方法，我一定要介绍给周围有需要的朋友！”</span>
+							</p>
+							<p>
+								<br />
+							</p>
+							<p>
+								<img src="img/p2.jpeg" style="width: 100%;text-align: center;" />
+							</p>
+							<p>
+								<strong><span style="font-family:宋体">案例三</span></strong>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								68<span style="font-family:宋体">岁的张大爷患有三叉神经疼</span>7<span style="font-family:宋体">年多了，几乎天天都会头痛上那么一会，睡眠不好时更是严重，让他痛不欲生。</span>
+							</p>
+							<p style="text-indent:28px">
+								&nbsp;
+							</p>
+							<p style="text-indent:28px">
+								<span style="font-family:宋体">张大爷儿子听别人介绍后，加【</span><span style="color:red;font-weight: 800;font-size: 20px;">tyct6688</span>
+								<span style="font-family:宋体">】微信进行咨询治疗，服用</span>10<span style="font-family:宋体">天后，张大爷睡眠质量得到了明显改善和提高，晚上深度睡眠能达到六个小时以上，三叉神经痛次数也大大降低，三四天才发作一次。服药一个多月后，疼痛的症状彻底消失，身体感觉一天比一天有劲了，精神头也越来越足了，不仅不需要子女照顾，现在还能带家里面的小孙子，帮孩子做做家务，闲暇时就到公园广场散散心，终于享受到健康老年生活的乐趣。</span>
+							</p>
+							<p>
+								<br />
+							</p>
+							<p style="text-align:center">
+								<a class="copyBtn" href="javascript:" data-clipboard-action="copy" data-clipboard-target="#foo">
+									<strong><span style="color:red;font-weight: 800;font-size: 20px;" id="foo">tyct6688</span><span style="font-family:宋体;color:#A6A6A6">【复制微信，获取治疗方法】</span></strong>
+								</a>
+							</p>
+							<p>
+								<strong><span style="font-family:宋体;color:#A6A6A6"><br /></span></strong>
+							</p>
+							<p>
+								<strong><span style="font-family:宋体;color:#A6A6A6"><br /></span></strong>
+							</p>
+							<div style="margin-left: 20px;">
+								<ul class=" list-paddingleft-2" style="list-style-type: disc;">
+									<li>
+										<p style="text-align: center;">
+											<strong><strong><span style="font-family:黑体">如果你长期饱受头痛困扰，坐立难安</span></strong></strong>
+										</p>
+									</li>
+									<li>
+										<p style="text-align: center;">
+											<strong><strong><span style="font-family:黑体">如果头痛已经影响你正常的生活与工作</span></strong></strong>
+										</p>
+									</li>
+									<li>
+										<p style="text-align: center;">
+											<strong><strong><span style="font-family:黑体">如果你尝试了多种方法，依旧无法彻底解决头痛困扰</span></strong></strong>
+										</p>
+									</li>
+									<li>
+										<p style="text-align: center;">
+											<strong><strong><span style="font-family:黑体">那么，马上添加微信【</span><span style="color:red;font-weight: 800;font-size: 20px;">tyct6688</span>
+												</strong><strong><span style="font-family:黑体">】</span></strong></strong>
+										</p>
+									</li>
+									<li>
+										<p style="text-align: center;">
+											<strong><strong><span style="font-family:黑体">一对一定制专属治疗方案，解决你的头痛困扰</span></strong></strong>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<p>
+								<br />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-box" style="overflow: auto">
+				<div class="content-title" style="height: 30px;">
+					<span style="float: left;">精选留言</span>
+				</div>
+				<div class="content-itmes-box">
+					<div class="content-item">
+						<div class="content-item-left">
+							<img class="content-item-avtar" data-ratio="1" src="./img/a1.jpg" data-type="jpeg" data-w="35" _width="48px"
+							 data-fail="0">
+						</div>
+						<div class="content-item-right">
+							<div class="content-item-right-top">
+								<span class="content-item-name">Blue</span>
+								<div class="content-item-zan">
+									<i class="fa fa-thumbs-o-up ">2793</i>
+								</div>
+							</div>
+							<div class="content-item-right-bottom">
+								感谢分享，我也是常年头痛，用了很多方法没有效果，已经加了微信，希望这次能彻底治愈。
+							</div>
+						</div>
+					</div>
+
+					<div class="content-item">
+						<div class="content-item-left">
+							<img class="content-item-avtar" data-ratio="1" src="./img/a2.jpg" data-type="jpeg" data-w="35" _width="48px"
+							 data-fail="0">
+						</div>
+						<div class="content-item-right">
+							<div class="content-item-right-top">
+								<span class="content-item-name">越努力越幸运</span>
+								<div class="content-item-zan">
+									<i class="fa fa-thumbs-o-up ">2012</i>
+								</div>
+							</div>
+							<div class="content-item-right-bottom">
+								效果真的很好，妈妈头痛十几年了，现在喝了差不多一个疗程了，头痛基本解决了，人的精神状态都好了很多~
+							</div>
+						</div>
+					</div>
+
+					<div class="content-item">
+						<div class="content-item-left">
+							<img class="content-item-avtar" data-ratio="1" src="./img/a3.jpg" data-type="jpeg" data-w="35" _width="48px"
+							 data-fail="0">
+						</div>
+						<div class="content-item-right">
+							<div class="content-item-right-top">
+								<span class="content-item-name">星星的眼泪</span>
+								<div class="content-item-zan">
+									<i class="fa fa-thumbs-o-up ">1843</i>
+								</div>
+							</div>
+							<div class="content-item-right-bottom">
+								看到好多人都反馈说这个方法治疗头痛很有效，我也试试，希望这次能彻底解决我偏头痛的问题吧！
+							</div>
+						</div>
+					</div>
+
+					<div class="content-item">
+						<div class="content-item-left">
+							<img class="content-item-avtar" data-ratio="1" src="./img/a4.jpg" data-type="jpeg" data-w="35" _width="48px"
+							 data-fail="0">
+						</div>
+						<div class="content-item-right">
+							<div class="content-item-right-top">
+								<span class="content-item-name">瘦不到100不改名</span>
+								<div class="content-item-zan">
+									<i class="fa fa-thumbs-o-up ">1521</i>
+								</div>
+							</div>
+							<div class="content-item-right-bottom">
+								真的太感谢了，之前一来月经就头痛的不行，只能靠吃止痛药缓解。现在喝了三个疗程了，
+								月经期头不疼了，就来肚子疼都缓解了不少！有需要的朋友一定要加<span style="color:red;font-weight: 800;font-size: 20px;">tyct6688</span>！真的很有效果！
+							</div>
+						</div>
+					</div>
+
+					<div class="content-item">
+						<div class="content-item-left">
+							<img class="content-item-avtar" data-ratio="1" src="./img/a5.jpg" data-type="jpeg" data-w="35" _width="48px"
+							 data-fail="0">
+						</div>
+						<div class="content-item-right">
+							<div class="content-item-right-top">
+								<span class="content-item-name">悲伤逆流成河</span>
+								<div class="content-item-zan">
+									<i class="fa fa-thumbs-o-up ">1411</i>
+								</div>
+							</div>
+							<div class="content-item-right-bottom">
+								感谢分享，用了1个多月，效果确实神奇！感觉自己的头痛情况一天比一天好，现在头痛的情况基本不会出现了。
+							</div>
+						</div>
+					</div>
+
+					<div class="content-item">
+						<div class="content-item-left">
+							<img class="content-item-avtar" data-ratio="1" src="./img/a6.jpg" data-type="jpeg" data-w="35" _width="48px"
+							 data-fail="0">
+						</div>
+						<div class="content-item-right">
+							<div class="content-item-right-top">
+								<span class="content-item-name">春天开花</span>
+								<div class="content-item-zan">
+									<i class="fa fa-thumbs-o-up ">1039</i>
+								</div>
+							</div>
+							<div class="content-item-right-bottom">
+								自从生了孩子，每天睡眠不够，一到晚上10点多就开始头痛，真的难受死了。希望这次能解决我这个毛病吧。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-bottom">
+					<div class="content-bottom-title">
+						<span style="float: left;">回复</span>
+					</div>
+					<div class="content-bottom-pop">
+						<button class="btn btn_default" onclick="popContent()" style="border: 1px solid #ccc;background-color: #f2f2f2;;">点击登录,马上回复</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="float-box">
+			<image src="./img/wechat.png" style="width: 58px;margin: 5px;"></image>
+			<!-- <div class="float-count">99+</div> -->
+			<div class="float-line1">
+				<a class="copyBtn3" href="javascript:" data-clipboard-action="copy" data-clipboard-target="#foo3" style="color: #fff;">
+					<span style="border-radius: 15px;background-color: red;padding: 2px;" id="foo3">tyct6688</span>
+					点击复制加微信
+				</a>
+			</div>
+			<div class="float-line2">定制专属治疗方案，彻底解决头痛困扰</div>
+		</div>
+		<div class="content-over" id="pop" style="display: none;">
+			<div class="content-input">
+				<div class="content-input-top" style="height: 10%;">
+					<span class="content-input-close" id="close"></span>
+					<span class="content-input-title">写留言</span>
+					<span class="content-input-button">
+						<button class="btn btn-default" id="commit" style="font-size: 15px;" disabled="disabled">提交</button>
+					</span>
+				</div>
+				<div class="content-input-inter" style="height: 80%;margin: 15px;">
+					<textarea id="content_input" rows="5" placeholder="留言被精选后,将对所有人可见" oninput="checkTxt()"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="commit-success" id="success" style="display: none;">
+			<img src="img/success.png" style="width: 40px;" />
+			<span style="margin-left: 5px;font-size: 20px;">提交成功！</span>
+		</div>
+		<script type="text/javascript" src="./js/dist/clipboard.min.js"></script>
+		<script>
+			var clipboard = new ClipboardJS('.copyBtn').on('success', function(e) {
+				var e = e || window.event;
+			}).on('error', function(e) {});
+
+			var clipboard = new ClipboardJS('.copyBtn1').on('success', function(e) {
+				var e = e || window.event;
+			}).on('error', function(e) {});
+
+			var clipboard = new ClipboardJS('.copyBtn3').on('success', function(e) {
+				var e = e || window.event;
+			}).on('error', function(e) {});
+		</script>
+		<script type="text/javascript">
+			window.history.replaceState({
+				status: 2
+			}, '', '#');
+			// 返回键
+			pushHistory();
+			window.addEventListener("popstate", function(e) {
+				popup();
+			}, false);
+
+			function pushHistory() {
+				var state = {
+					title: "title",
+
+					url: "#"
+				};
+				window.history.pushState(state, "title", "#");
+				// history.go(0);
+			}
+
+			function popContent() {
+				$('#pop').show();
+			}
+			$('#close').click(function() {
+				$('#content_input').val('');
+				$('#commit').attr('disabled', '');
+				$('#pop').hide();
+			})
+
+			function checkTxt() {
+				var obj = $('#content_input'),
+					len = obj.val().length;
+				if (len > 0) {
+					$('#commit').removeAttr('disabled');
+				} else {
+					$('#commit').attr('disabled', '');
+				}
+			}
+
+			$('#commit').click(function() {
+				$('#content_input').val('');
+				$('#commit').attr('disabled', '');
+				$('#pop').hide();
+				var timeout = setTimeout(function() {
+					$('#success').show();
+					setTimeout(function() {
+						$('#success').hide();
+					}, 2000);
+				}, 300);
+			})
+			document.body.scrollIntoView(false)
+		</script>
+
+		<script>
+			var clipboard = new ClipboardJS('.copyBtn2').on('success', function(e) {
+				var e = e || window.event;
+			}).on('error', function(e) {});
+		</script>
+		<script type="text/javascript">
+
+
+		</script>
+	</body>
+</html>
