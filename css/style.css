@@ -7636,5 +7636,20 @@ screen and (device-aspect-ratio:40/71) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border:1px solid #CCCCCC
+	border: 1px solid #CCCCCC
+}
+
+.top_banner {
+	padding: 5px;
+	font-size: 20px;
+	background-color: #45A9E7;
+}
+
+.top_banner li {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+.top_banner li span{
+	color: #FFFFFF;
 }
